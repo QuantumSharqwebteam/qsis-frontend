@@ -4,6 +4,7 @@ import Navbar from "./Qsis-Components/Navbar";
 import Footer from "./Qsis-Components/Footer";
 import Home from "./Qsis-Components/Home";
 import ContactForm from "./Qsis-Pages/Contact";
+import AdminLogin from "./Qsis-Pages/AdminLogin";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             {/* <Route path="/projects" element={<Projects />} /> */}
             <Route path="/contact" element={<ContactForm />} />
+            <Route path="/admin_login" element={<AdminLogin />} />
             {/* <Route path="/career" element={<Career />} /> */}
           </Routes>
         </main>
