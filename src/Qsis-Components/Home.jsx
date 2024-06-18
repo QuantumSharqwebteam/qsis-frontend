@@ -3,10 +3,29 @@ import { IoIosApps } from "react-icons/io";
 import { FaBrain } from "react-icons/fa";
 import { BiSolidMicrochip } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import { Carousel } from "flowbite-react";
 
 const Home = () => {
   return (
     <>
+      {/* carousal section */}
+      <div className="mx-auto w-3/4 md:px-4 lg:px-14 h-72 lg:h-56 rounded-xl md:my-16">
+            <Carousel  indicators={false}>
+                <div className="flex flex-col h-full items-center justify-center gap-4">
+                    <h3 className='text-xl lg:text-3xl underline underline-offset-8 text-emerald-500'>Our Mission</h3>
+                    <p className='text-sm md:text-xl'>Our mission is to leverage technology to create a safer, more efficient world. We strive to deliver
+                        top-notch solutions tailored to the unique needs of our clients.</p>
+                </div>
+                <div className="flex flex-col h-full items-center justify-center gap-4">
+                    <h3 className=' text-xl lg:text-3xl underline underline-offset-8 text-emerald-500'>Our Vision</h3>
+                    <p className='text-sm md:text-xl'>Our vision is to create a safer, more efficient, and
+                        sustainable world by harnessing the power of technology. We aim to be the leading provider of
+                        cutting-edge solutions that address critical challenges in public safety, agriculture, traffic
+                        management, and beyond. By continuously pushing the boundaries of innovation, we strive to
+                        improve the quality of life for individuals and communities globally.</p>
+                </div>
+            </Carousel>
+        </div>
       {/* Our services section */}
       <h1 className="text-2xl pl-5 mb-2 font-medium">Our Services</h1> 
       <div className="service-con">
