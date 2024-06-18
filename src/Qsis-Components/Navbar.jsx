@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../assets/company-logo.png";
+import logo from "../../public/assets/company-logo.png";
 import { Link } from "react-router-dom";
 import { CiMenuFries } from "react-icons/ci";
 
