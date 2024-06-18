@@ -38,6 +38,12 @@ const Footer = () => {
           >
             Careers
           </Link>
+          <Link
+            to={"/admin"}
+            className="hover:text-sky-600 transition-all duration-500"
+          >
+            Admin
+          </Link>
         </div>
       </div>
       {/* copyrights */}
