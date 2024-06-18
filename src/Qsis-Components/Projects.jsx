@@ -22,7 +22,7 @@ const Product = ({name, x, y}) => {
 
   const Products = () => {
     return (
-      <>    <div className="w-[100vw] px-3 py-16 flex flex-col items-center justify-center mt-10 bg-[#17C6D4]">
+      <>    <div className="w-[100vw] px-3 py-16 flex flex-col items-center justify-center mt-5 bg-[#17C6D4]">
          
           <h2 className="text-3xl font-bold text-[#424242] mb-16 md:mb-10 text-center ">Projects</h2>
   

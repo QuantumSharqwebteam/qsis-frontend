@@ -11,3 +11,77 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+
+
+  .service-container{
+    padding: 20px;
+  }
+  
+  .service-con{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .service-card{
+    border-radius: 20px;
+    background-color: #02172c;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: margin 0.3s;
+    box-shadow: rgba(63, 14, 133, 0.815) 0px 8px 15px, rgba(63, 14, 133, 0.05) 0px 5px 10px;
+  }
+  
+  
+  
+  .service-icon{
+    margin-bottom: 20px;
+  }
+
+  .home-project-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project-card{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    border-radius: 16px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+  }
+
+
+  @media screen and (min-width:968px) {
+    .service-con{
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .service-card{
+      box-shadow: none;
+      transition: scale 0.3;
+    }
+    .service-card:hover{
+      margin: 0px 20px 0px 30px ;
+      scale: 1;
+      box-shadow: rgba(63, 14, 133, 0.815) 0px 10px 25px, rgba(63, 14, 133, 0.05) 0px 5px 10px;
+    }
+    
+  }
