@@ -1,8 +1,9 @@
-import React from "react";
+// import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Qsis-Components/Navbar";
 import Footer from "./Qsis-Components/Footer";
 import ContactForm from "./Qsis-Pages/Contact";
+import Projects from "./Qsis-Components/Projects";
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
         <main className="flex-grow">
           <Routes>
             {/* <Route path="/" element={<Home />} /> */}
-            {/* <Route path="/projects" element={<Projects />} /> */}
+            <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<ContactForm />} />
             {/* <Route path="/career" element={<Career />} /> */}
           </Routes>
