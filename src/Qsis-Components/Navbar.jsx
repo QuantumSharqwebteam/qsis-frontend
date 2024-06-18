@@ -81,6 +81,15 @@ const Navbar = () => {
                 Add Enquiry
               </Link>
             </li>
+            <li>
+              <Link
+                to="/about"
+                onClick={toggleMenu}
+                className="block py-2 px-3 text-gray-900 md:p-0 hover:text-sky-600 transition-all duration-500 text-[18px] font-medium"
+              >
+                About Us
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
