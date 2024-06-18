@@ -1,12 +1,10 @@
-import { FaMicrochip } from "react-icons/fa6";
+import { FaArrowRightLong, FaMicrochip } from "react-icons/fa6";
 import { IoIosApps } from "react-icons/io";
 import { FaBrain } from "react-icons/fa";
 import { BiSolidMicrochip } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-
-export const Home = () => {
+const Home = () => {
   return (
     <>
       {/* Our services section */}
@@ -86,3 +84,5 @@ export const Home = () => {
     </>
   );
 };
+
+export default Home;

@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Qsis-Components/Navbar";
 import Footer from "./Qsis-Components/Footer";
-import Home from "./Qsis-Components/Home"
+import Home from "./Qsis-Components/Home";
 import ContactForm from "./Qsis-Pages/Contact";
 
 const App = () => {
