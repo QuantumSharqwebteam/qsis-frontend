@@ -8,6 +8,7 @@ const Home = () => {
   return (
     <>
       {/* Our services section */}
+      <h1 className="text-2xl pl-5 mb-2 font-medium">Our Services</h1> 
       <div className="service-con">
         <div className="service-card">
           <FaMicrochip className="service-icon" size={50} />
@@ -51,8 +52,8 @@ const Home = () => {
       </div>
 
       {/* our work section */}
-      <div className="project-list-con">
-        <h2 className="">Our Work</h2>
+      <div className="project-list-con service-container">
+        <h1 className="text-2xl mb-5 font-medium ">Our Work</h1> 
 
         <ul className="home-project-list">
           <li className="project-card bg-teal-600">
@@ -74,9 +75,8 @@ const Home = () => {
         </ul>
         <div className="flex justify-end mx-1">
           <Link to="/projects">
-            <p className="text-teal-600 cursor-pointer">
-              {" "}
-              Explore More <FaArrowRightLong />
+            <p className="flex text-teal-600 cursor-pointer">
+              Explore More <FaArrowRightLong className="my-1 ml-1"/>
             </p>
           </Link>
         </div>

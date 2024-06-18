@@ -21,6 +21,7 @@
   .service-con{
     display: flex;
     flex-direction: column;
+    padding: 20px;
   }
   
   .service-card{
