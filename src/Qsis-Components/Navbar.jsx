@@ -57,7 +57,7 @@ const Navbar = () => {
               <Link
                 to="/"
                 onClick={toggleMenu}
-                className="block py-2 px-3 text-gray-900 md:p-0 hover:text-sky-600 transition-all duration-500 text-[18px] font-medium"
+                className="block py-2 px-3 text-gray-900 md:p-0 hover:text-cyan-500 transition-all duration-500 text-[18px] font-normal"
                 aria-current="page"
               >
                 Home
@@ -67,7 +67,7 @@ const Navbar = () => {
               <Link
                 to="/projects"
                 onClick={toggleMenu}
-                className="block py-2 px-3 text-gray-900 md:p-0 hover:text-sky-600 transition-all duration-500 text-[18px] font-medium"
+                className="block py-2 px-3 text-gray-900 md:p-0 hover:text-cyan-500 transition-all duration-500 text-[18px] font-normal"
               >
                 Our Projects
               </Link>
@@ -76,7 +76,7 @@ const Navbar = () => {
               <Link
                 to="/contact"
                 onClick={toggleMenu}
-                className="block py-2 px-3 text-gray-900 md:p-0 hover:text-sky-600 transition-all duration-500 text-[18px] font-medium"
+                className="block py-2 px-3 text-gray-900 md:p-0 hover:text-cyan-500 transition-all duration-500 text-[18px] font-normal"
               >
                 Add Enquiry
               </Link>
@@ -85,7 +85,7 @@ const Navbar = () => {
               <Link
                 to="/about"
                 onClick={toggleMenu}
-                className="block py-2 px-3 text-gray-900 md:p-0 hover:text-sky-600 transition-all duration-500 text-[18px] font-medium"
+                className="block py-2 px-3 text-gray-900 md:p-0 hover:text-cyan-500 transition-all duration-500 text-[18px] font-normal"
               >
                 About Us
               </Link>
