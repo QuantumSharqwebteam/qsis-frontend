@@ -47,6 +47,26 @@
     margin-bottom: 20px;
   }
 
+  .home-project-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project-card{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    border-radius: 16px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+  }
+
 
   @media screen and (min-width:968px) {
     .service-con{
