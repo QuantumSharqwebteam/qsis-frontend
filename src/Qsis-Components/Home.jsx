@@ -26,22 +26,22 @@ const Home = () => {
           <hr className="w-14 border-2 border-emerald-500" />
         </div>
         <ul className="home-project-list">
-          <li className="project-card bg-emerald-500 text-white">
+          <li className="project-card bg-lime-800 text-white">
             Automatic Irrigation System
           </li>
-          <li className="project-card border-2 text-emerald-500 border-emerald-500">
+          <li className="project-card border-2 text-lime-800 border-lime-800">
             Lane Change Detection
           </li>
-          <li className="project-card bg-emerald-500 text-white">
+          <li className="project-card bg-lime-800 text-white">
             Number Plate Extractor
           </li>
-          <li className="project-card border-2 text-emerald-500 border-emerald-500">
+          <li className="project-card border-2 text-lime-800 border-lime-800">
             Object Detector
           </li>
-          <li className="project-card bg-emerald-500 text-white">
+          <li className="project-card bg-lime-800 text-white">
             Helmet Violation Detection
           </li>
-          <li className="project-card border-2 text-emerald-500 border-emerald-500 ">
+          <li className="project-card border-2 text-lime-800 border-lime-800 ">
             No Parking Alarming System
           </li>
         </ul>
