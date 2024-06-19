@@ -1,11 +1,9 @@
 import { FaArrowRightLong, FaMicrochip } from "react-icons/fa6";
-import { IoIosApps } from "react-icons/io";
-import { FaBrain } from "react-icons/fa";
-import { BiSolidMicrochip } from "react-icons/bi";
+
 import { Link } from "react-router-dom";
-import { Carousel } from "flowbite-react";
 import ImagesCarousel from "./ImagesCarousel";
 import MissionVision from "./MissionVision";
+import Service from "./Service";
 
 const Home = () => {
   return (
@@ -14,6 +12,7 @@ const Home = () => {
       <ImagesCarousel />
 
       {/* Our services section */}
+<<<<<<< HEAD
 
       <div className=" my-10 px-4  space-y-8">
         <h1 className="text-4xl font-semibold mb-0 pb-0">Our Services</h1>
@@ -60,6 +59,9 @@ const Home = () => {
           </p>
         </div>
       </div>
+=======
+      <Service />
+>>>>>>> 1b4bd25a90a52cb41e17bff3861f701808a10896
 
       {/* carousal section */}
       <MissionVision />
@@ -68,7 +70,11 @@ const Home = () => {
       <div className="project-list-con service-container">
         <div className="my-16 justify-center space-y-8">
           <h1 className="text-4xl font-semibold">Our Work</h1>
+<<<<<<< HEAD
           <hr className="w-20 border-2 border-sky-600 rounded mt-0 ml-5" />
+=======
+          <hr className="w-14 border-2 border-emerald-500-600" />
+>>>>>>> 1b4bd25a90a52cb41e17bff3861f701808a10896
         </div>
         <ul className="home-project-list">
           <li className="project-card bg-emerald-500 text-white">
@@ -77,7 +83,9 @@ const Home = () => {
           <li className="project-card border-2 text-emerald-500 border-emerald-500">
             Lane Change Detection
           </li>
-          <li className="project-card bg-emerald-500 text-white">Number Plate Extractor</li>
+          <li className="project-card bg-emerald-500 text-white">
+            Number Plate Extractor
+          </li>
           <li className="project-card border-2 text-emerald-500 border-emerald-500">
             Object Detector
           </li>
