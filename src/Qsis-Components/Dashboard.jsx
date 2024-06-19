@@ -32,7 +32,7 @@ const Dashboard = () => {
               <li className="bg-[#17C6D4] px-3 py-1 rounded-md cursor-pointer">View Access</li>
           </Link> */}
 
-          <Link to={"/viewEnquiries"} className="w-full md:w-fit">
+          <Link to={"/editcareers"} className="w-full md:w-fit">
             <li className="bg-emerald-500 px-3 py-1 rounded-md cursor-pointer w-full text-center">
               Edit Careers
             </li>
