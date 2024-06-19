@@ -46,8 +46,8 @@ const Home = () => {
       <div className="service-con">
         <div className="service-card">
           <FaMicrochip className="service-icon" size={50} />
-          <h4>AI / ML</h4>
-          <p>
+          <h4 className="text-xl font-semibold mb-2">AI / ML</h4>
+          <p className="font-light">
             Our mission is to leverage technology to create a safer, more
             efficient world. We strive to deliver top-notch solutions tailored
             to the unique needs of our clients.
@@ -56,8 +56,8 @@ const Home = () => {
 
         <div className="service-card">
           <IoIosApps className="service-icon" size={50} />
-          <h4>App Development</h4>
-          <p>
+          <h4 className="text-xl font-semibold mb-2">App Development</h4>
+          <p className="font-light">
             Our mission is to leverage technology to create a safer, more
             efficient world. We strive to deliver top-notch solutions tailored
             to the unique needs of our clients.
@@ -66,8 +66,8 @@ const Home = () => {
 
         <div className="service-card">
           <BiSolidMicrochip className="service-icon" size={50} />
-          <h4>Embedded System</h4>
-          <p>
+          <h4 className="text-xl font-semibold mb-2">Embedded System</h4>
+          <p className="font-light">
             Our mission is to leverage technology to create a safer, more
             efficient world. We strive to deliver top-notch solutions tailored
             to the unique needs of our clients.
@@ -76,8 +76,8 @@ const Home = () => {
 
         <div className="service-card">
           <FaBrain className="service-icon" size={50} />
-          <h4>Innovative Solutions</h4>
-          <p>
+          <h4 className="text-xl font-semibold mb-2">Innovative Solutions</h4>
+          <p className="font-light">
             Our mission is to leverage technology to create a safer, more
             efficient world. We strive to deliver top-notch solutions tailored
             to the unique needs of our clients.
@@ -90,26 +90,26 @@ const Home = () => {
         <h1 className="text-2xl mb-5 font-medium ">Our Work</h1>
 
         <ul className="home-project-list">
-          <li className="project-card bg-teal-600">
+          <li className="project-card bg-emerald-500 text-white">
             Automatic Irrigation System
           </li>
-          <li className="project-card border border-teal-600">
+          <li className="project-card border-2 text-emerald-500 border-emerald-500">
             Lane Change Detection
           </li>
-          <li className="project-card bg-teal-600">Number Plate Extractor</li>
-          <li className="project-card border border-teal-600">
+          <li className="project-card bg-emerald-500 text-white">Number Plate Extractor</li>
+          <li className="project-card border-2 text-emerald-500 border-emerald-500">
             Object Detector
           </li>
-          <li className="project-card bg-teal-600">
+          <li className="project-card bg-emerald-500 text-white">
             Helmet Violation Detection
           </li>
-          <li className="project-card border border-teal-600">
+          <li className="project-card border-2 text-emerald-500 border-emerald-500 ">
             No Parking Alarming System
           </li>
         </ul>
         <div className="flex justify-end mx-1">
           <Link to="/projects">
-            <p className="flex text-teal-600 cursor-pointer">
+            <p className="flex text-emerald-500 cursor-pointer">
               Explore More <FaArrowRightLong className="my-1 ml-1" />
             </p>
           </Link>

@@ -32,9 +32,9 @@ const Navbar = () => {
         isScrolled ? "bg-sky-50" : ""
       }`}
     >
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-2 ">
         <a href="/" className="flex items-center">
-          <img src={logo} className="w-24 h-24" alt="Logo" />
+          <img src={logo} className="w-16 h-16" alt="Logo" />
         </a>
         <button
           data-collapse-toggle="navbar-default"
