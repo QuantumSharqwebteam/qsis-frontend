@@ -1,7 +1,8 @@
 // import React from 'react'
 import axios from "axios";
 import { useState } from "react";
-import {Link, useNavigate} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom";
+import adminImg from '../assets/admin.svg';
 
 const Admin = () => {
 
@@ -22,8 +23,13 @@ const Admin = () => {
     }
 
   return (
-    <div className="bg-[#17C6D4] w-full  flex justify-center px-3 py-20">
-    <div className="bg-white px-10 py-5 rounded ">
+    <div className="flex">
+        <div className="w-1/2 h-[80vh]">
+          <img src={adminImg} className="h-[80vh]" alt='adminImg'/>
+        </div>
+        
+        <div className="w-1/2 flex justify-center px-3 py-20" >
+    <div className="bg-white px-10 py-5 rounded w-3/5 ">
   <form action="" className="" onSubmit={handleSubmit}>
   <h2 className="text-center">
    <strong className="text-3xl font-bold text-center">Login</strong> </h2>
@@ -70,6 +76,8 @@ const Admin = () => {
       </Link> */}
 </div>
 </div>
+    </div>
+    
   )
 }
 
