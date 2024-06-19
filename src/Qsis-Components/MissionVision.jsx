@@ -1,6 +1,6 @@
 import React from "react";
-import mission from "../assets/mission.png";
-import vision from "../assets/vision.gif";
+import mission from "../assets/mission.svg";
+import vision from "../assets/vision.png";
 
 const MissionVision = () => {
   return (
@@ -8,7 +8,7 @@ const MissionVision = () => {
       {/* mission */}
 
       <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto mt-4 ">
-        <div className="w-full md:w-[70%] mx-auto flex justify-center items-center">
+        <div className="w-full md:w-[60%] mx-auto flex justify-center items-center">
           <img src={mission} alt="mission logo" />
         </div>
         <div className="mt-16 justify-center space-y-8">

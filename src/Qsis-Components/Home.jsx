@@ -14,7 +14,11 @@ const Home = () => {
       <ImagesCarousel />
 
       {/* Our services section */}
-      <h1 className="text-2xl pl-5 my-4 font-medium">Our Services</h1>
+
+      <div className="my-16 justify-center space-y-8">
+        <h1 className="text-4xl font-semibold">Our Services</h1>
+        <hr className="w-14 border-2 border-sky-600" />
+      </div>
       <div className="service-con">
         <div className="service-card">
           <FaMicrochip className="service-icon" size={50} />
@@ -62,8 +66,10 @@ const Home = () => {
 
       {/* our work section */}
       <div className="project-list-con service-container">
-        <h1 className="text-2xl mb-5 font-medium ">Our Work</h1>
-
+        <div className="my-16 justify-center space-y-8">
+          <h1 className="text-4xl font-semibold">Our Work</h1>
+          <hr className="w-14 border-2 border-sky-600" />
+        </div>
         <ul className="home-project-list">
           <li className="project-card bg-teal-600">
             Automatic Irrigation System
