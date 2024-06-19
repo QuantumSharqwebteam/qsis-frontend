@@ -15,9 +15,9 @@ const Home = () => {
 
       {/* Our services section */}
 
-      <div className="my-16 justify-center space-y-8">
-        <h1 className="text-4xl font-semibold">Our Services</h1>
-        <hr className="w-14 border-2 border-sky-600" />
+      <div className=" my-10 px-4  space-y-8">
+        <h1 className="text-4xl font-semibold mb-0 pb-0">Our Services</h1>
+        <hr className="w-20 border-2 border-sky-600 rounded mt-0 ml-5" />
       </div>
       <div className="service-con">
         <div className="service-card">
@@ -68,7 +68,7 @@ const Home = () => {
       <div className="project-list-con service-container">
         <div className="my-16 justify-center space-y-8">
           <h1 className="text-4xl font-semibold">Our Work</h1>
-          <hr className="w-14 border-2 border-sky-600" />
+          <hr className="w-20 border-2 border-sky-600 rounded mt-0 ml-5" />
         </div>
         <ul className="home-project-list">
           <li className="project-card bg-emerald-500 text-white">
@@ -88,7 +88,7 @@ const Home = () => {
             No Parking Alarming System
           </li>
         </ul>
-        <div className="flex justify-end mx-1">
+        <div className="flex justify-end mx-1 mb-4">
           <Link to="/projects">
             <p className="flex text-emerald-500 cursor-pointer">
               Explore More <FaArrowRightLong className="my-1 ml-1" />

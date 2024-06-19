@@ -23,13 +23,13 @@ const Admin = () => {
     }
 
   return (
-    <div className="flex">
-        <div className="w-1/2 h-[80vh]">
-          <img src={adminImg} className="h-[80vh]" alt='adminImg'/>
+    <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className=" h-[80vh]">
+          <img src={adminImg} className="h-[80vh]"  alt='adminImg'/>
         </div>
         
-        <div className="w-1/2 flex justify-center px-3 py-20" >
-    <div className="bg-white px-10 py-5 rounded w-3/5 ">
+        <div className=" flex justify-center px-3 items-center " >
+    <div className="bg-white px-10 py-5 rounded w-3/5">
   <form action="" className="" onSubmit={handleSubmit}>
   <h2 className="text-center">
    <strong className="text-3xl font-bold text-center">Login</strong> </h2>
