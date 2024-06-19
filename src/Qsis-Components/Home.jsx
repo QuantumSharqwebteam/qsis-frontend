@@ -3,7 +3,6 @@ import { IoIosApps } from "react-icons/io";
 import { FaBrain } from "react-icons/fa";
 import { BiSolidMicrochip } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import { Carousel } from "flowbite-react";
 import ImagesCarousel from "./ImagesCarousel";
 import MissionVision from "./MissionVision";
 
