@@ -5,6 +5,7 @@ import ImagesCarousel from "./ImagesCarousel";
 import MissionVision from "./MissionVision";
 import Service from "./Service";
 import { useEffect } from "react";
+import BoxAnimation from "./Box-Animation/BoxAnimation";
 
 const Home = () => {
   useEffect(() => {
@@ -14,10 +15,11 @@ const Home = () => {
   return (
     <>
       <ImagesCarousel />
-
+      <BoxAnimation />
       <Service />
-
+      <BoxAnimation />
       <MissionVision />
+      <BoxAnimation />
 
       {/* our work section */}
       <div className="project-list-con service-container">
@@ -45,6 +47,7 @@ const Home = () => {
             No Parking Alarming System
           </li>
         </ul>
+
         <div className="flex justify-end mx-1 mb-4">
           <Link to="/projects">
             <p className="flex text-emerald-500 cursor-pointer">

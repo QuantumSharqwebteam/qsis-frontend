@@ -5,8 +5,8 @@ import Footer from "./Qsis-Components/Footer";
 import Home from "./Qsis-Components/Home";
 import ContactForm from "./Qsis-Pages/Contact";
 import Career from "./Qsis-Pages/Career";
-import Projects from "./Qsis-Components/Projects"
-import Signup from "./Qsis-Components/Signup"
+import Projects from "./Qsis-Components/Projects";
+import Signup from "./Qsis-Components/Signup";
 import Dashboard from "./Qsis-Components/Dashboard";
 import Admin from "./Qsis-Components/Admin";
 
