@@ -110,7 +110,7 @@ const Form = () => {
             <span className="text-red-500">{errors.user_message}</span>
           )}
           <button
-            className="bg-green-500 py-2 rounded uppercase text-lg text-slate-900 font-medium hover:bg-green-600 
+            className="bg-emerald-500 py-2 rounded uppercase text-lg text-black font-medium hover:bg-emerald-600 
         transition-all duration-500"
             onClick={handleBtn}
             disabled={loading}

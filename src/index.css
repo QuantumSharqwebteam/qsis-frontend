@@ -9,7 +9,7 @@
   }
   
   ::selection {
-    background-color: #00ccff;
+    background-color: #10b981;
   }
 
   .gradient-text {
@@ -18,3 +18,5 @@
     -webkit-text-fill-color: transparent;
     user-select: none;
   }
+
+ 
