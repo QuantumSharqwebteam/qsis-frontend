@@ -21,7 +21,7 @@ const Home = () => {
       <div className="project-list-con service-container">
         <div className="my-16 justify-center space-y-8">
           <h1 className="text-4xl font-semibold">Our Work</h1>
-          <hr className="w-14 border-2 border-emerald-500-600" />
+          <hr className="w-14 border-2 border-emerald-500" />
         </div>
         <ul className="home-project-list">
           <li className="project-card bg-emerald-500 text-white">
