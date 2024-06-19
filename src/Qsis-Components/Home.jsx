@@ -17,13 +17,11 @@ const Home = () => {
       <ImagesCarousel />
       <BoxAnimation />
       <Service />
-      <BoxAnimation />
       <MissionVision />
-      <BoxAnimation />
 
       {/* our work section */}
       <div className="project-list-con service-container">
-        <div className="my-16 justify-center space-y-8">
+        <div className="ml-2 md:ml-10 my-16 justify-center space-y-8">
           <h1 className="text-4xl font-semibold">Our Work</h1>
           <hr className="w-14 border-2 border-emerald-500" />
         </div>

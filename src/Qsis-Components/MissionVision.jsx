@@ -1,6 +1,7 @@
 import React from "react";
 import mission from "../assets/mission.svg";
 import vision from "../assets/vision.png";
+import BoxAnimation from "./Box-Animation/BoxAnimation";
 
 const MissionVision = () => {
   return (
@@ -41,6 +42,7 @@ const MissionVision = () => {
           <img src={vision} alt="mission logo" />
         </div>
       </div>
+      <BoxAnimation />
     </div>
   );
 };
