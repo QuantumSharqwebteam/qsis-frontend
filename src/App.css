@@ -39,7 +39,7 @@
     margin-bottom: 20px;
     cursor: pointer;
     transition: margin 0.3s;
-    box-shadow: rgba(63, 14, 133, 0.815) 0px 8px 15px, rgba(63, 14, 133, 0.05) 0px 5px 10px;
+    /* box-shadow: rgba(63, 14, 133, 0.815) 0px 8px 15px, rgba(63, 14, 133, 0.05) 0px 5px 10px; */
 
     background: linear-gradient(199deg,#003a17,#003c46,#00d0ff);
     background-size: 180% 180%;
