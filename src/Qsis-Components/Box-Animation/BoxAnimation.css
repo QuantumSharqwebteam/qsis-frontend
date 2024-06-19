@@ -46,6 +46,7 @@
     background: transparent;
     background: -webkit-linear-gradient(to left, #7e7e7e, #3f3f3f);
     width: 100%;
+    margin: auto;
     height: 100vh;
     position: absolute;
     z-index: -1;
@@ -66,8 +67,8 @@
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgb(161, 252, 173);
-    animation: animate 25s linear infinite;
+    background: rgb(212, 255, 217);
+    animation: animate 30s linear infinite;
     bottom: -150px;
   }
   

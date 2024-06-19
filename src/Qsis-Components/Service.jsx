@@ -3,7 +3,6 @@ import { IoIosApps } from "react-icons/io";
 import { FaBrain } from "react-icons/fa";
 import { BiSolidMicrochip } from "react-icons/bi";
 import { FaMicrochip } from "react-icons/fa6";
-import BoxAnimation from "./Box-Animation/BoxAnimation";
 
 const Service = () => {
   return (
@@ -53,7 +52,6 @@ const Service = () => {
           </p>
         </div>
       </div>
-      <BoxAnimation />
     </div>
   );
 };
