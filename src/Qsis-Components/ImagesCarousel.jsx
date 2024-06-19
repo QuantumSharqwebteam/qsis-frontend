@@ -28,8 +28,8 @@ const ImagesCarousel = () => {
                 className="object-cover w-full h-full"
               />
               <div className="absolute inset-0 flex items-center justify-center">
-                <p className="gradient-text text-2xl md:text-4xl lg:text-5xl font-bold text-center">
-                  Quantaum Sharq Innovative Solutions
+                <p className="gradient-text text-2xl md:text-5xl lg:text-6xl font-bold text-center">
+                  Quantum Sharq Innovative Solutions
                 </p>
               </div>
             </div>

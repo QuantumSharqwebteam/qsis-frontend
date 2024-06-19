@@ -15,7 +15,7 @@ const Contact = () => {
         data-aos="fade-right"
         data-aos-duration="3000"
       >
-        <p className="text-base uppercase text-green-600 font-medium">
+        <p className="text-base uppercase text-lime-600 font-normal">
           Rest easy, we're here for you!
         </p>
         <p className="text-2xl md:text-5xl leading-normal md:leading-[60px] text-slate-900 font-normal font-sans">

@@ -9,6 +9,8 @@ import Projects from "./Qsis-Components/Projects";
 import Signup from "./Qsis-Components/Signup";
 import Dashboard from "./Qsis-Components/Dashboard";
 import Admin from "./Qsis-Components/Admin";
+import EditProducts from "./Qsis-Pages/EditProducts";
+import EditCareer from "./Qsis-Pages/EditCareer";
 import About from "./Qsis-Pages/About";
 
 const App = () => {
@@ -25,6 +27,8 @@ const App = () => {
             <Route path="/signup" element={<Signup />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/admin" element={<Admin />} />
+            <Route path="/editproducts" element={<EditProducts />} />
+            <Route path="/editcareers" element={<EditCareer />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </main>

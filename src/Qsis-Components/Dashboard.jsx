@@ -21,7 +21,7 @@ const Dashboard = () => {
         Welcome, <span id="typewriter" className="gradient-text"></span>{" "}
       </h2>
       <nav>
-        <ul className=" items-center flex flex-col md:flex-row justify-center gap-4 font-medium text-lg  py-10 capitalize">
+        <ul className=" items-center flex flex-col md:flex-row justify-center gap-4 font-normal text-base  py-10 capitalize">
           <Link to={"/signup"} className="w-full md:w-fit">
             <li className="bg-emerald-500 px-3 py-1 rounded-md cursor-pointer w-full text-center">
               Give Access
@@ -38,7 +38,7 @@ const Dashboard = () => {
             </li>
           </Link>
 
-          <Link to={"/viewEnquiries"} className="w-full md:w-fit">
+          <Link to={"/editproducts"} className="w-full md:w-fit">
             <li className="bg-emerald-500 px-3 py-1 rounded-md cursor-pointer w-full text-center">
               Edit Products
             </li>
