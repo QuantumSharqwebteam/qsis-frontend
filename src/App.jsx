@@ -9,6 +9,7 @@ import Projects from "./Qsis-Components/Projects";
 import Signup from "./Qsis-Components/Signup";
 import Dashboard from "./Qsis-Components/Dashboard";
 import Admin from "./Qsis-Components/Admin";
+import About from "./Qsis-Pages/About";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="/signup" element={<Signup />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/admin" element={<Admin />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </main>
         <Footer />
