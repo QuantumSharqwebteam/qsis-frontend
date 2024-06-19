@@ -4,8 +4,13 @@ import { Link } from "react-router-dom";
 import ImagesCarousel from "./ImagesCarousel";
 import MissionVision from "./MissionVision";
 import Service from "./Service";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <ImagesCarousel />

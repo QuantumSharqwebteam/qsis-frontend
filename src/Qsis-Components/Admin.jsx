@@ -27,22 +27,18 @@ const Admin = () => {
   }, []);
 
   return (
-    <div className="flex">
-      <div className="w-1/2 h-[80vh]">
+    <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="w-full">
         <img src={adminImg} className="h-[80vh]" alt="adminImg" />
       </div>
 
-      <div className="w-1/2 flex justify-center px-3 py-20">
-        <div className="bg-white px-10 py-5 rounded w-3/5 ">
+      <div className="w-full flex justify-center px-3 py-20">
+        <div className="bg-white md:px-10 py-5 rounded w-11/12 md:w-3/5 ">
           <form action="" className="" onSubmit={handleSubmit}>
-            <h2 className="text-center">
-              <strong className="text-3xl font-bold text-center">Login</strong>{" "}
-            </h2>
-
-            <p className="italics text-center">
-              {" "}
-              <i>Only admin can login</i>{" "}
-            </p>
+            <div className="text-center space-y-2">
+              <h3 className="text-3xl font-semibold text-center">Login</h3>
+              <p className="text-slate-500 text-center">Only admin can login</p>
+            </div>
 
             <div className="flex flex-col py-3">
               <label htmlFor="name" className="py-2">
