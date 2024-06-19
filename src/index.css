@@ -11,3 +11,10 @@
   ::selection {
     background-color: #00ccff;
   }
+
+  .gradient-text {
+    background-image: linear-gradient(to right top, #0049b6, #05a3ff, #008793, #00bf72, #a8eb12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+  }

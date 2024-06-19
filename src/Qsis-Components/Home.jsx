@@ -4,10 +4,14 @@ import { FaBrain } from "react-icons/fa";
 import { BiSolidMicrochip } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { Carousel } from "flowbite-react";
+import ImagesCarousel from "./ImagesCarousel";
 
 const Home = () => {
   return (
     <>
+      {/* Image Carousel */}
+      <ImagesCarousel />
+
       {/* carousal section */}
       <div className="mx-auto w-3/4 md:px-4 lg:px-14 h-72 lg:h-56 rounded-xl md:my-16">
         <Carousel indicators={false}>
