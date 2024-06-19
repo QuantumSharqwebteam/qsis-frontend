@@ -32,8 +32,8 @@ const Admin = () => {
         <img src={adminImg} className="h-[80vh]" alt="adminImg" />
       </div>
 
-      <div className="w-full flex justify-center px-3 py-20">
-        <div className="bg-white md:px-10 py-5 rounded w-11/12 md:w-3/5 ">
+      <div className="w-full flex justify-center px-3 py-0 md:py-20">
+        <div className="bg-white md:px-10 pb-5 rounded w-11/12 md:w-3/5 ">
           <form action="" className="" onSubmit={handleSubmit}>
             <div className="text-center space-y-2">
               <h3 className="text-3xl font-semibold text-center">Login</h3>
