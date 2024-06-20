@@ -1,5 +1,5 @@
 import React from "react";
-import mission from "../assets/mission.svg";
+import mission from "../assets/mission-red.svg";
 import vision from "../assets/vision.png";
 
 const MissionVision = () => {
@@ -12,8 +12,7 @@ const MissionVision = () => {
           <img src={mission} alt="mission logo" />
         </div>
         <div className="mt-16 justify-center space-y-8">
-          <h1 className="text-4xl font-semibold">What We Do</h1>
-          <hr className="w-14 border-2 border-emerald-500" />
+          <h1 className="text-4xl font-bold text-rose-700">What We Do</h1>
           <p className="text-justify text-lg text-gray-800">
             Our mission is to leverage technology to create a safer, more
             efficient world. We strive to deliver top-notch solutions tailored
@@ -25,8 +24,9 @@ const MissionVision = () => {
       {/* vision */}
       <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto my-4 ">
         <div className="mt-16 justify-center space-y-8">
-          <h1 className="text-4xl font-semibold">Empowering the Future</h1>
-          <hr className="w-14 border-2 border-emerald-500" />
+          <h1 className="text-4xl font-bold  text-emerald-900">
+            Empowering the Future
+          </h1>
           <p className="text-justify text-lg text-gray-800">
             At Quantum Sharq Innovative Solutions, our vision is to create a
             safer, more efficient, and sustainable world by harnessing the power

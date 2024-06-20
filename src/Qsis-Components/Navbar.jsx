@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../assets/company-logo.png";
+import logo from "../assets/Qsis_logo_invite.png";
 import { Link } from "react-router-dom";
 import { CiMenuFries } from "react-icons/ci";
 
@@ -29,12 +29,18 @@ const Navbar = () => {
   return (
     <nav
       className={`sticky top-0 z-10 backdrop-blur-sm  transition-all duration-200 ${
-        isScrolled ? "bg-emerald-50" : ""
+        isScrolled ? "bg-white" : ""
       }`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-2 ">
-        <a href="/" className="flex items-center">
-          <img src={logo} className="w-16 h-16" alt="Logo" />
+        <a href="/" className="flex items-center w-[6rem]">
+          <img src={logo} className="w-full h-full" alt="Logo" />
+          <h3 className="uppercase font-bold text-4xl flex items-center space-x-2">
+            <span className="text-emerald-900">Q</span>{" "}
+            <span className="text-rose-700">S</span>{" "}
+            <span className="text-amber-400">I</span>{" "}
+            <span className="text-sky-500">S</span>
+          </h3>
         </a>
         <button
           data-collapse-toggle="navbar-default"
@@ -52,12 +58,12 @@ const Navbar = () => {
           }`}
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
+          <ul className="flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
             <li>
               <Link
                 to="/"
                 onClick={toggleMenu}
-                className="block py-2 px-3 text-gray-900 md:p-0 hover:text-emerald-500 transition-all duration-500 text-[18px] font-normal"
+                className="block py-2 px-3 text-gray-900 md:p-0 hover:text-emerald-500 transition-all duration-500 text-[18px] font-semibold"
                 aria-current="page"
               >
                 Home
@@ -67,7 +73,7 @@ const Navbar = () => {
               <Link
                 to="/projects"
                 onClick={toggleMenu}
-                className="block py-2 px-3 text-gray-900 md:p-0 hover:text-emerald-500 transition-all duration-500 text-[18px] font-normal"
+                className="block py-2 px-3 text-gray-900 md:p-0 hover:text-emerald-500 transition-all duration-500 text-[18px] font-semibold"
               >
                 Our Projects
               </Link>
@@ -76,7 +82,7 @@ const Navbar = () => {
               <Link
                 to="/contact"
                 onClick={toggleMenu}
-                className="block py-2 px-3 text-gray-900 md:p-0 hover:text-emerald-500 transition-all duration-500 text-[18px] font-normal"
+                className="block py-2 px-3 text-gray-900 md:p-0 hover:text-emerald-500 transition-all duration-500 text-[18px] font-semibold"
               >
                 Add Enquiry
               </Link>
@@ -85,7 +91,7 @@ const Navbar = () => {
               <Link
                 to="/about"
                 onClick={toggleMenu}
-                className="block py-2 px-3 text-gray-900 md:p-0 hover:text-emerald-500 transition-all duration-500 text-[18px] font-normal"
+                className="block py-2 px-3 text-gray-900 md:p-0 hover:text-emerald-500 transition-all duration-500 text-[18px] font-semibold"
               >
                 About Us
               </Link>
