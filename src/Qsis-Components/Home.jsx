@@ -1,54 +1,62 @@
+import { useEffect } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import { Link } from "react-router-dom";
 import ImagesCarousel from "./ImagesCarousel";
 import MissionVision from "./MissionVision";
 import Service from "./Service";
-import { useEffect } from "react";
-import BoxAnimation from "./Box-Animation/BoxAnimation";
+import CompanyNameTypeAnimation from "./CompanyNameTypeAnimation";
 
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const works = [
+    "Automatic Irrigation System",
+    "Lane Change Detection",
+    "Number Plate Extractor",
+    " Object Detector",
+    "Helmet Violation Detection",
+    "No Parking Alarming System",
+  ];
+
+  const colors = [
+    "#cd0037",
+    "#1b5c96",
+    "#10622b",
+    "#e98024",
+    "#f0e14a",
+    "#87CEEB",
+  ];
+
   return (
     <>
+      <CompanyNameTypeAnimation />
       <ImagesCarousel />
-      <BoxAnimation />
       <Service />
       <MissionVision />
 
       {/* our work section */}
-      <div className="project-list-con service-container">
+      <div className="project-list-con">
         <div className="ml-2 md:ml-10 my-16 justify-center space-y-8">
-          <h1 className="text-4xl font-semibold">Our Work</h1>
-          <hr className="w-14 border-2 border-emerald-500" />
+          <h1 className="text-4xl font-bold text-sky-500">Our Work</h1>
         </div>
         <ul className="home-project-list">
-          <li className="project-card bg-lime-800 text-white">
-            Automatic Irrigation System
-          </li>
-          <li className="project-card border-2 text-lime-800 border-lime-800">
-            Lane Change Detection
-          </li>
-          <li className="project-card bg-lime-800 text-white">
-            Number Plate Extractor
-          </li>
-          <li className="project-card border-2 text-lime-800 border-lime-800">
-            Object Detector
-          </li>
-          <li className="project-card bg-lime-800 text-white">
-            Helmet Violation Detection
-          </li>
-          <li className="project-card border-2 text-lime-800 border-lime-800 ">
-            No Parking Alarming System
-          </li>
+          {works.map((data, i) => (
+            <li className="project-card bg-[#E8E7E7] font-bold text-lg" key={i}>
+              <div
+                className="circle"
+                style={{ border: `6px solid ${colors[i % colors.length]}` }}
+              />
+              {data}
+            </li>
+          ))}
         </ul>
 
         <div className="flex justify-end mx-1 mb-4">
           <Link to="/projects">
-            <p className="flex text-emerald-500 cursor-pointer">
+            <p className="flex text-blue-950 cursor-pointer">
               Explore More <FaArrowRightLong className="my-1 ml-1" />
             </p>
           </Link>

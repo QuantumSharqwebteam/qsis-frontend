@@ -11,8 +11,16 @@ import Dashboard from "./Qsis-Components/Dashboard";
 import Admin from "./Qsis-Components/Admin";
 import EditProducts from "./Qsis-Pages/EditProducts";
 import EditCareer from "./Qsis-Pages/EditCareer";
+import About from "./Qsis-Pages/About";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const App = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
@@ -28,6 +36,7 @@ const App = () => {
             <Route path="/admin" element={<Admin />} />
             <Route path="/editproducts" element={<EditProducts />} />
             <Route path="/editcareers" element={<EditCareer />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </main>
         <Footer />
