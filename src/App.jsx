@@ -12,8 +12,15 @@ import Admin from "./Qsis-Components/Admin";
 import EditProducts from "./Qsis-Pages/EditProducts";
 import EditCareer from "./Qsis-Pages/EditCareer";
 import About from "./Qsis-Pages/About";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const App = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <Router>
       <div className="flex flex-col min-h-screen">

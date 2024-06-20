@@ -7,7 +7,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-[#03130b] text-slate-100 px-3 md:px-8 py-6 md:py-12 selection:text-gray-900">
+    <div className="bg-[#03130b] text-slate-100 px-3 md:px-8 py-6 md:py-12">
       <div className="block md:flex justify-between items-center">
         <div className="p-4 flex flex-col space-y-4 w-full md:w-1/2">
           <h1 className="text-[15px] md:text-lg font-semibold">

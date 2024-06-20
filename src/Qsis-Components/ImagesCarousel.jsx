@@ -21,17 +21,12 @@ const ImagesCarousel = () => {
         {images.map((img, index) => (
           <div key={index}>
             <div className="relative h-96 md:h-[100vh]">
-              <div className="absolute inset-0 bg-black opacity-80"></div>
+              <div className="absolute inset-0"></div>
               <img
                 src={img}
                 alt={`Service ${index + 1}`}
                 className="object-cover w-full h-full"
               />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <p className="gradient-text text-2xl md:text-5xl lg:text-6xl font-bold text-center">
-                  Quantum Sharq Innovative Solutions
-                </p>
-              </div>
             </div>
           </div>
         ))}
