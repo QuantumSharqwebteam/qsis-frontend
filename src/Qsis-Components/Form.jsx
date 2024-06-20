@@ -69,7 +69,7 @@ const Form = () => {
         data-aos="fade-left"
         data-aos-duration="3000"
       >
-        <form className="flex flex-col space-y-2" ref={form}>
+        <form className="flex flex-col space-y-2 w-3/4" ref={form}>
           <label>Name</label>
           <input
             type="text"
@@ -104,7 +104,7 @@ const Form = () => {
             placeholder="Feel free to ask!"
             name="user_message"
             className="border border-slate-300 p-1 rounded px-2 text-slate-700
-        outline-sky-500"
+        outline-sky-500 resize-none"
           ></textarea>
           {errors.user_message && (
             <span className="text-red-500">{errors.user_message}</span>

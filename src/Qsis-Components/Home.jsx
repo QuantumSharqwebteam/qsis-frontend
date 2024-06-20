@@ -38,7 +38,7 @@ const Home = () => {
       <MissionVision />
 
       {/* our work section */}
-      <div className="project-list-con service-container">
+      <div className="project-list-con">
         <div className="ml-2 md:ml-10 my-16 justify-center space-y-8">
           <h1 className="text-4xl font-bold text-sky-500">Our Work</h1>
         </div>

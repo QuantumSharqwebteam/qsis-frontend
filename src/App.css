@@ -67,6 +67,8 @@
   .home-project-list{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    margin-left: 20px;
     justify-content: center;
   }
 
