@@ -1,70 +1,139 @@
-import React from "react";
-import { motion } from "framer-motion";
+import {useEffect, useState} from "react";
 
-const Product = ({ name, x, y }) => {
+import * as Dialog from "@radix-ui/react-dialog";
+import { Cross2Icon } from "@radix-ui/react-icons";
+
+import { AiFillAlert } from "react-icons/ai";
+import { GiTechnoHeart, GiPeaceDove } from "react-icons/gi";
+import { CgSmileMouthOpen } from "react-icons/cg";
+import { VscWorkspaceTrusted } from "react-icons/vsc";
+import { IoLogoJavascript } from "react-icons/io";
+import { FaPython } from "react-icons/fa";
+import { IoHardwareChipSharp } from "react-icons/io5";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+
+const Product = () => {
+  const [produts, setProducts] = useState([])
+  useEffect(() => {
+    fetch(`http://localhost:5000/projects`)
+    .then((res) => res.json())
+    .then(data => {
+        console.log(data);
+        setProducts(data)})
+    .catch((err) => console.error(err))
+}, []);
+  const icons = [
+    AiFillAlert,
+    GiTechnoHeart,
+    GiPeaceDove,
+    CgSmileMouthOpen,
+    VscWorkspaceTrusted,
+    IoLogoJavascript,
+    FaPython,
+    IoHardwareChipSharp,
+  ];
+
+    const data = produts;
+
+    const colors = [
+      "#11bdb7",
+      "#117bbd",
+      "#b50b46",
+      "#db2777",
+      "#0bb55d",
+      "#bb38c7",
+      "#27521f",
+      "#6366f1",
+      "#f59e0b",
+      "#65a30d",
+      "#f43f5e",
+      "#d946ef"
+
+          ]
+
   return (
-    <>
-      <motion.div
-        className="flex items-center justify-center text-center rounded-full font-semibold bg-black text-white p-2 shadow-black cursor-pointer text-sm"
-        whileHover={{ scale: 1.05 }}
-        initial={{ x: 0, y: 0 }}
-        animate={{ x: x, y: y }}
-        transition={{ duration: 1.5 }}
-        viewport={{ once: false }}
-        style={{
-          fontSize: "13px",
-        }}
-      >
-        {name}
-      </motion.div>
-    </>
-  );
-};
+    <div className="w-full bg-[#E8E7E7]">
+    <VerticalTimeline className="">
+      {data.map((item, index) => {
+        const Icon = icons[index % icons.length];
 
-const Products = () => {
-  return (
-    <>
-      {" "}
-      <div className="w-[100vw] px-3 py-16 flex flex-col items-center justify-center mt-5 bg-[#17C6D4]">
-        <h2 className="text-3xl font-bold text-[#424242] mb-16 md:mb-10 text-center ">
-          Projects
-        </h2>
-
-        <div
-          className="w-[75%] h-96 relative rounded-full flex items-center justify-center"
-          style={{
-            background: `repeating-radial-gradient(rgba(151, 245, 108, 0.4) 2px, #fff 5px, #fff 100px 10%)`,
-          }}
-        >
-          <motion.div
-            className="flex items-center justify-center rounded-full font-semibold bg-black text-white p-4 shadow-black cursor-pointer absolute text-center text-sm md:text=[10px]"
-            whileHover={{ scale: 1.05 }}
+        return (
+          <VerticalTimelineElement
+            key={index}
+            className="vertical-timeline-element--work "
+            contentStyle={{
+              background: "#fff",
+              color: "#000",
+              boxShadow: "none",
+              borderRadius : "22px",
+            }}
+            contentArrowStyle={{ borderRight: "7px solid #555" }}
+            iconStyle={{ background: `${colors[index]} `, color: "#fff" }}
+            icon={<Icon />}
           >
-            Projects
-          </motion.div>
+            <div className="">
+            <h3 className="vertical-timeline-element-title text-xl font-medium">
+              {item.projectName}
+            </h3>
+            <div className="text-slate-500">
+              {item.projectOverview.length > 20
+                ? item.projectOverview.slice(0, 70) + "..."
+                : item.projectOverview}
+            </div>
+            </div>
 
-          <Product name="Automatic Irrigation System" x="180%" y="-5%" />
+            {/* dialog model*/}
+            <Dialog.Root>
+              <Dialog.Trigger asChild>
+                <button className="text-green-400 underline my-3">
+                  Read more
+                </button>
+              </Dialog.Trigger>
+              <Dialog.Portal>
+                <Dialog.Overlay className="bg-blackA6 data-[state=open]:animate-overlayShow fixed inset-0 z-50 bg-[#1d1d1d] opacity-80" />
+                <Dialog.Content className="data-[state=open]:animate-contentShow fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 max-h-[80vh] w-full max-w-[450px] rounded-[6px] bg-white p-[25px] shadow-lg focus:outline-none">
+                  <Dialog.Title className="text-mauve12 m-0 text-[17px] font-medium">
+                    {item.projectName}
+                  </Dialog.Title>
+                  <Dialog.Description className="text-mauve11 mt-[10px] mb-5 text-[15px] leading-normal text-justify">
+                    {item.projectOverview}
+                  </Dialog.Description>
 
-          <Product name="Helmet Violation Detection" x="40%" y="-100%" />
+                  <div className="text-mauve11 mt-[10px] mb-5 text-[15px] leading-normal ">
+                    <ul>
+                      <li className="font-semibold">Features</li>
+                      {item.projectFeatures.map((feat, i) => (
+                        <li key={i}>{feat}</li>
+                      ))}
+                    </ul>
+                  </div>
 
-          <Product name="Triples Violation Detection" x="300%" y="6%" />
+                  <div className="text-mauve11 mt-[10px] mb-5 text-[15px] leading-normal text-justify">
+                    <h2 className="font-semibold">Benefits</h2>
+                    <p>{item.projectImpact ? item.projectImpact : "No data found"}</p>
+                  </div>
 
-          <Product name="Lane Change Detection" x="-5%" y="80%" />
-
-          <Product name="Wrong Side Detection" x="-80%" y="-100%" />
-
-          <Product name="Crowd Detection" x="15%" y="140%" />
-
-          <Product name="No Parking Alarming System" x="-190%" y="-205%" />
-
-          <Product name="Number Plate Extractor" x="-150%" y="-200%" />
-
-          <Product name="Object Detector" x="-170%" y="0%" />
-        </div>
-      </div>
-      {/* <Projects /> */}
-    </>
+                  <Dialog.Close asChild>
+                    <button
+                      className="text-violet11 hover:bg-violet4 focus:shadow-violet7 absolute top-[10px] right-[10px] inline-flex h-[25px] w-[25px] appearance-none items-center justify-center rounded-full focus:shadow-[0_0_0_2px] focus:outline-none"
+                      aria-label="Close"
+                    >
+                      <Cross2Icon />
+                    </button>
+                  </Dialog.Close>
+                </Dialog.Content>
+              </Dialog.Portal>
+            </Dialog.Root>
+          </VerticalTimelineElement>
+        );
+      })}
+    </VerticalTimeline>
+    </div>
   );
 };
 
-export default Products;
+export default Product;

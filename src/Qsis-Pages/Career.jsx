@@ -1,12 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 // import jobs from "../json/JobList.json";
 
 const Career = () => {
+  const [careers, setCareers] = useState([])
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    fetch(`http://localhost:5000/career`)
+    .then((res) => res.json())
+    .then(data => {
+        console.log(data);
+        setCareers(data)})
+    .catch((err) => console.error(err))
+}, []);
 
-  return (
+  return (<>
     <div className="w-11/12 md:w-5/6 mx-auto mb-5">
       <div data-aos="zoom-in" data-aos-duration="3000">
         <div
@@ -19,17 +28,17 @@ const Career = () => {
         </div>
       </div>
 
-      {jobs.current_openings.map((job) => (
-        <div key={job.id}>
+      {careers && careers.map((job) => (
+        <div key={job._id}>
           <div
             className=" bg-slate-100 hover:bg-slate-200 cursor-pointer transition duration-500 my-6 md:my-4 rounded-md p-3 flex justify-between flex-col md:flex-row md:items-center"
             data-aos="fade-left"
             data-aos-duration="3000"
           >
             <div className="flex flex-col  space-y-3">
-              <p className="bg-gray-500 w-fit px-2 py-1 text-white rounded-full text-xs">
-                {job.id}
-              </p>
+              {/* <p className="bg-gray-500 w-fit px-2 py-1 text-white rounded-full text-xs">
+                {job._id}
+              </p> */}
               <h1 className="text-2xl font-medium hover:text-sky-700 transition duration-500 cursor-pointer">
                 {job.role}
               </h1>
@@ -78,17 +87,17 @@ const Career = () => {
         </div>
       </div>
 
-      {jobs.oppenigs.map((job) => (
-        <div key={job.id}>
+      {careers && careers.map((job) => (
+        <div key={job._id}>
           <div
             className=" bg-slate-100 hover:bg-slate-200 cursor-pointer transition duration-500 my-6 md:my-4 rounded-md p-3 flex justify-between flex-col md:flex-row md:items-center"
             data-aos="fade-left"
             data-aos-duration="3000"
           >
             <div className="flex flex-col  space-y-3">
-              <p className="bg-gray-500 w-fit px-2 py-1 text-white rounded-full text-xs">
+              {/* <p className="bg-gray-500 w-fit px-2 py-1 text-white rounded-full text-xs">
                 {job.id}
-              </p>
+              </p> */}
               <h1 className="text-2xl font-medium hover:text-sky-700 transition duration-500 cursor-pointer">
                 {job.role}
               </h1>
@@ -113,7 +122,7 @@ const Career = () => {
             </div>
             <div className="mt-4 flex flex-row space-y-0 md:space-y-2 md:flex-col justify-between">
               <h4 className="text-base capitalize text-sky-800">
-                {job.experience}
+              {job.experience}
               </h4>
               <h5 className="text-base uppercase text-red-700">{job.salary}</h5>
               <button className="text-start my-2 text-sm text-violet-800 underline underline-offset-2 hover:text-violet-500">
@@ -124,6 +133,7 @@ const Career = () => {
         </div>
       ))}
     </div>
+    </>
   );
 };
 
