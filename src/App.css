@@ -53,10 +53,9 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-left: 20px;
     justify-content: center;
+    margin-left: 10px;
     width: 100%;
-    margin: auto;
     place-content: center;
   }
 
