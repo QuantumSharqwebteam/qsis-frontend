@@ -39,26 +39,11 @@
     margin-bottom: 20px;
     cursor: pointer;
     transition: margin 0.3s;
-    /* box-shadow: rgba(63, 14, 133, 0.815) 0px 8px 15px, rgba(63, 14, 133, 0.05) 0px 5px 10px; */
 
-    /* background: linear-gradient(199deg,#003a17,#003c46,#00d0ff); */
     background-size: 180% 180%;
-    /* animation: gradient-animation 3s ease infinite; */
   }
   
-/*    
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-   */
+
   
   .service-icon{
     margin-bottom: 20px;
@@ -70,6 +55,9 @@
     align-items: center;
     margin-left: 20px;
     justify-content: center;
+    width: 100%;
+    margin: auto;
+    place-content: center;
   }
 
   .project-card{
@@ -81,13 +69,28 @@
     margin-right: 20px;
     margin-bottom: 20px;
     font-weight: 500;
-    width: 400px;
+    width: 320px;
     height: 100px;
     text-align: center;
+    position: relative;
+  }
+
+  .project-card:hover{
+    scale: 1.1;
+    transition: all 0.9s;
+  }
+  .circle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    padding: 5px;
   }
 
 
+
   @media screen and (min-width:968px) {
+    
     .service-con{
       display: flex;
       justify-content: space-around;

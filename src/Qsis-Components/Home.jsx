@@ -45,6 +45,10 @@ const Home = () => {
         <ul className="home-project-list">
           {works.map((data, i) => (
             <li className="project-card bg-[#E8E7E7] font-bold text-lg" key={i}>
+              <div
+                className="circle"
+                style={{ border: `6px solid ${colors[i % colors.length]}` }}
+              />
               {data}
             </li>
           ))}

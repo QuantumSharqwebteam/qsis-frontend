@@ -40,25 +40,21 @@ const Form = () => {
 
     setLoading(true);
 
-    // const service = import.meta.env.VITE_SERVICE_ID;
-    // const template = import.meta.env.VITE_TEMPLATE_ID;
-    // const publickey = import.meta.env.VITE_PUBLIC_KEY;
-
-    // emailjs
-    //   .sendForm(service, template, form.current, {
-    //     publicKey: publickey,
-    //   })
-    //   .then(() => {
-    //     toast.success("Message send succesfully!", { duration: 3000 });
-    //     form.current.reset();
-    //     setErrors({});
-    //   })
-    //   .catch((err) => {
-    //     console.log(err.text);
-    //   })
-    //   .finally(() => {
-    //     setLoading(false);
-    //   });
+    emailjs
+      .sendForm("service_wus31ug", "template_2lmtzfn", form.current, {
+        publicKey: "3IZqrxM1_UHKFdisy",
+      })
+      .then(() => {
+        toast.success("Message send succesfully!", { duration: 3000 });
+        form.current.reset();
+        setErrors({});
+      })
+      .catch((err) => {
+        console.log(err.text);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   return (

@@ -31,7 +31,7 @@ const Contact = () => {
               <CiMail />
             </i>
             <p className="text-base md:text-lg text-slate-700">
-              ifo.quantumsharq@gmail.com
+              info.quantumsharq@gmail.com
             </p>
           </div>
           <div className="flex items-center space-x-3">
