@@ -1,22 +1,43 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import adminImg from "../assets/admin.png";
+import { TiArrowBack } from "react-icons/ti";
 
 const Signup = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [passwaord, setPassword] = useState("");
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
       .post("http://localhost:3001/register", { name, email, passwaord })
-      .then((result) => console.log(result))
+      .then((res)=> res.json())
+      .then(data=>{
+        if (!data.token){
+          alert(data.message)
+        }
+        else{
+          alert(data.message)
+          navigate("/dashboard")
+        }
+      })
       .catch((err) => console.log(err));
+      
   };
+
+  
+
+  const onClickBack=()=>{
+    navigate("/dashboard");
+  }
   return (
+    <>
+    <button className=" bg-emerald-500 hover:bg-emerald-600 p-2 text-white rounded flex ml-auto mr-4" onClick={onClickBack} >Go Back <TiArrowBack className="mt-1 text-bold ml-1"/></button>
     <div className="w-full grid grid-cols-1 md:grid-cols-2 px-3 py-6">
       <div className="px-10 py-5 ">
         <form
@@ -100,6 +121,7 @@ const Signup = () => {
         />
       </div>
     </div>
+    </>
   );
 };
 

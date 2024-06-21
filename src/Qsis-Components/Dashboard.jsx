@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/company-logo.png";
 import Typewriter from "typewriter-effect/dist/core";
+import { LuLogOut } from "react-icons/lu";
 
 const Dashboard = () => {
   useEffect(() => {
@@ -19,7 +20,7 @@ const Dashboard = () => {
 
   return (
     <div className="w-full mb-0 h-1/2  py-10 px-6">
-      <button className=" bg-rose-600 p-2 text-white rounded flex ml-auto" onClick={onClickLogout} >Logout</button>
+      <button className=" bg-rose-600 p-2 text-white rounded flex ml-auto" onClick={onClickLogout} >Logout <LuLogOut className="mt-1 ml-1"/></button>
       <div className="flex justify-center">
         <img src={logo} alt="qsis logo" className="w-[150px]" />
       </div>
