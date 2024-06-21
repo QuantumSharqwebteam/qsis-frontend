@@ -2,25 +2,27 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import adminImg from "../assets/admin.svg";
+import { useAuth } from "../Utilities/AuthContext";
 
 const Admin = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
   const navigate = useNavigate();
+  const { storeTokenLS } = useAuth()
 
   const handleSubmit = (e) => {
-    console.log(email,password);
     e.preventDefault();
     axios
-      .post(`http://localhost:5000/user`, { email, password })
+      .post(`http://localhost:5000/user/login`, { email, password })
       .then((result) => {
-        console.log(result);
-        if (result.data === "success") {
+        console.log(result.data);
+        if (result.data.token) {
+          storeTokenLS(result.data.token)
           navigate("/dashboard");
         }
       })
-      .catch((err) => console.log("you have got some error: " ,err));
+      .catch((err) => console.log("you have got some error: ", err));
   };
 
   useEffect(() => {

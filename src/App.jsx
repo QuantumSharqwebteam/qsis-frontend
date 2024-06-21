@@ -1,5 +1,6 @@
 // import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { useAuth } from "./Utilities/AuthContext.jsx";
 import Navbar from "./Qsis-Components/Navbar";
 import Footer from "./Qsis-Components/Footer";
 import Home from "./Qsis-Components/Home";
@@ -17,6 +18,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const App = () => {
+
   useEffect(() => {
     Aos.init();
   }, []);
@@ -31,7 +33,7 @@ const App = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<ContactForm />} />
             <Route path="/career" element={<Career />} />
-            <Route path="/signup" element={<Signup />} />
+            <Route path="/signup" element={ <Signup /> } />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/editproducts" element={<EditProducts />} />

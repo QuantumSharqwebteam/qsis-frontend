@@ -7,12 +7,13 @@ import adminImg from "../assets/admin.png";
 const Signup = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [passwaord, setPassword] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
+    console.log(name, email,password);
     e.preventDefault();
     axios
-      .post("http://localhost:3001/register", { name, email, passwaord })
+      .post("http://localhost:5000/user/createUser", { name, email, password })
       .then((result) => console.log(result))
       .catch((err) => console.log(err));
   };
@@ -71,7 +72,7 @@ const Signup = () => {
               placeholder="Enter password"
               required
               onChange={(e) => setPassword(e.target.value)}
-              value={passwaord}
+              value={password}
             />
           </div>
 
