@@ -4,11 +4,12 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { Cross2Icon } from "@radix-ui/react-icons";
 
 import { AiFillAlert } from "react-icons/ai";
-import { GiTechnoHeart, GiPeaceDove } from "react-icons/gi";
+import { GiTechnoHeart} from "react-icons/gi";
+import { FaUserCheck } from "react-icons/fa6";
 import { CgSmileMouthOpen } from "react-icons/cg";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
-import { IoLogoJavascript } from "react-icons/io";
-import { FaPython } from "react-icons/fa";
+import { TbUserScan } from "react-icons/tb";
+import { TbHelmet } from "react-icons/tb";
 import { IoHardwareChipSharp } from "react-icons/io5";
 import {
   VerticalTimeline,
@@ -29,11 +30,11 @@ const Product = () => {
   const icons = [
     AiFillAlert,
     GiTechnoHeart,
-    GiPeaceDove,
+    FaUserCheck,
     CgSmileMouthOpen,
     VscWorkspaceTrusted,
-    IoLogoJavascript,
-    FaPython,
+    TbUserScan,
+    TbHelmet,
     IoHardwareChipSharp,
   ];
 
