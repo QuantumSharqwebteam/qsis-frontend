@@ -30,9 +30,9 @@ const Admin = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2">
+    <div className="flex flex-col md:flex-row justify-center items-center">
       <div className="w-full">
-        <img src={adminImg} className="h-[80vh]" alt="adminImg" />
+        <img src={adminImg} className="h-52 m-auto md:h-96 md:m-auto ld:h-[80vh]" alt="adminImg" />
       </div>
 
       <div className="w-full flex justify-center px-3 py-0 md:py-20">
