@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react";
 import axios from "axios";
-import {useParams} from "react-router-dom"
+// import {useParams} from "react-router-dom"
+
 
 const EditCareer = () => {
   const [role, setRole] = useState("");
@@ -15,9 +16,11 @@ const EditCareer = () => {
 
   const [showCreate, setShowCreate] = useState(false)
 
-  const [showEdit, setShowEdit] = useState(true)
+  // const [showEdit, setShowEdit] = useState(true)
 
   // const {id} = useParams()
+
+ 
 
   useEffect(() => {
     fetch(`http://localhost:5000/career`)
@@ -45,13 +48,12 @@ const EditCareer = () => {
   }
   console.log(role, requirements, experience, salary);
   return (
-
- <> 
- <div className="flex justify-center items-center flex-col mb-6">    
+<>
+<div className="flex justify-center items-center flex-col mb-6">    
  <button className="bg-green-500 px-4 py-2 rounded-md text-white cursor-pointer text-center" onClick={() => setShowCreate(!showCreate)}>Create Job</button>
         { showCreate &&
           <form
-          className="w-full md:w-9/12 mx-auto mb-4 md:mb-0"
+          className="w-1/2 md:w-9/12 mx-auto mb-4 md:mb-0"
           onSubmit={handleSubmit}
         >
           <div className="text-center">
@@ -130,7 +132,7 @@ const EditCareer = () => {
           </button>
         </form>}
         </div>
-         
+
 
         <div className="w-full flex justify-center items-center">
         <table className="px-5 py-5 bg-[#E8E7E7] my-10">
