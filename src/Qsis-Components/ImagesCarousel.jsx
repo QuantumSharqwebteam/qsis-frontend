@@ -21,7 +21,7 @@ const ImagesCarousel = () => {
       >
         {images.map((img, index) => (
           <div key={index}>
-            <div className="relative h-96 md:h-[100vh]">
+            <div className="relative h-96 md:h-[50vh] lg:h-[100vh]">
               <div className="absolute inset-0"></div>
               <img
                 src={img}
