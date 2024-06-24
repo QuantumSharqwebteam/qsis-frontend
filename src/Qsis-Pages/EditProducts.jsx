@@ -48,12 +48,12 @@ const deleteCareer = (id) => {
   .catch((err) => console.log("error : ", err));
 }
 
-const handleProjectEdit = (id) => {
-  console.log(id);
-  return id;
-};
+// const handleProjectEdit = (id) => {
+//   console.log(id);
+//   return id;
+// };
 
-const id = handleProjectEdit();
+// const id = handleProjectEdit();
 
 // console.log(id);
 
@@ -61,14 +61,14 @@ const id = handleProjectEdit();
 
 
   return (
-  <div className="w-full">
-    <button className="bg-green-500 px-3 rounded-md py-2 cursor-pointer mx-auto "
+  <div className="w-full flex justify-center items-center flex-col mb-6">
+    <button className="bg-green-500 px-4 py-2 rounded-md text-white cursor-pointer text-center mb-10"
     onClick={() => {setShowCreate(!showCreate)}}
     >Create new Project</button>
 
     {
       showCreate && <div className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center">
-        <div className="bg-white p-4 rounded-md w-1/2 z-10">
+        <div className="bg-white p-4 rounded-md w-full md:w-1/2 z-10">
         <form
           className="w-1/2 md:w-9/12 mx-auto mb-4 md:mb-0"
           onSubmit={handleSubmit}
@@ -259,9 +259,6 @@ const id = handleProjectEdit();
           <tr key={project._id}>
             <td className="border border-1 border-black px-3 py-2">{project.projectName}</td>
             <td className="border border-1 border-black px-3 py-2 flex gap-3">
-              <button className="bg-green-500 px-3 rounded-md py-2 cursor-pointer"
-              onClick={() => {setShowEdit(!showEdit)}}
-              > <p className="" onClick={() => handleProjectEdit(project._id)}>Edit </p> </button>
               <button className="bg-red-500 px-3 rounded-md py-2 cursor-pointer"
               onClick={() =>deleteCareer(project._id)}
               >Delete</button>

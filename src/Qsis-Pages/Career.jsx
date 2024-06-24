@@ -24,7 +24,7 @@ const Career = () => {
           data-aos-duration="3000"
         >
           <h1 className="text-4xl font-semibold">Current Openings</h1>
-          <hr className="w-14 border-2 border-sky-600" />
+          {/* <hr className="w-14 border-2 border-sky-600" /> */}
         </div>
       </div>
 
@@ -83,7 +83,7 @@ const Career = () => {
           data-aos-duration="3000"
         >
           <h1 className="text-4xl font-semibold">Openings</h1>
-          <hr className="w-14 border-2 border-sky-600" />
+          {/* <hr className="w-14 border-2 border-sky-600" /> */}
         </div>
       </div>
 

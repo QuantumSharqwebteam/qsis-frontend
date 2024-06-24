@@ -25,25 +25,33 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex  p-4 md:p-0 justify-start space-x-6  text-sm underline underline-offset-2 text-zinc-800 font-semibold">
+         <button className="bg-gray-900 text-white rounded-md px-4 py-2">
           <a
             href="https://forms.gle/6SEFCSi7Hj7ZguM17"
             target="_blank"
-            className="hover:scale-110 transition-all duration-500"
+            className="hover:scale-110 transition-all duration-500 no-underline"
           >
             Contact
           </a>
+          </button>
+
+          <button className="bg-gray-900 text-white rounded-md px-4 py-2">
           <Link
             to={"/career"}
-            className="hover:scale-110 transition-all duration-500"
+            className="hover:scale-110 transition-all duration-500 no-underline"
           >
             Careers
           </Link>
+          </button>
+
+          <button className="bg-gray-900 text-white rounded-md px-4 py-2">
           <Link
             to={"/admin"}
-            className="hover:scale-110 transition-all duration-500"
+            className="hover:scale-110 transition-all duration-500 no-underline"
           >
             Admin
           </Link>
+          </button>
         </div>
       </div>
       {/* copyrights */}
