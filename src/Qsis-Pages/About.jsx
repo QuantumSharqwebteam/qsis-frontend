@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import AboutUs from "../assets/about.svg";
+import aboutSvg from "../assets/about.svg";
 
 const About = () => {
   useEffect(() => {
@@ -7,53 +7,72 @@ const About = () => {
   }, []);
 
   return (
-    <div className="px-5">
-      <div className="lg:text-center">
-        <h1 className="text-3xl font-semibold text-center text-emerald-500 underline underline-offset-8">
-          About Us
-        </h1>
-        <p className="mt-6 text-xl  m-auto lg:w-2/3 text-center">
-          Our mission is to leverage technology to create a safer, more
-          efficient world. We strive to deliver top-notch solutions tailored to
-          the unique needs of our clients.
-        </p>
-        {/* <div className="md:flex justify-center items-center"> */}
-        <img src={AboutUs} alt="about" className="md:h-96 md:w-1/2 m-auto" />
-        <p className=" mt-4 md:mt-0 text-xl md:text-xl lg:w-2/3 m-auto text-center">
-          Our vision is to create a safer, more efficient, and sustainable world
-          by harnessing the power of technology. We aim to be the leading
-          provider of cutting-edge solutions that address critical challenges in
-          public safety, agriculture, traffic management, and beyond. By
-          continuously pushing the boundaries of innovation, we strive to
-          improve the quality of life for individuals and communities globally.
-        </p>
-        {/* </div> */}
-
-        <div className="flex flex-col mt-14 justify-center items-center">
-          <h1 className="text-3xl md:text-4xl mb-6 font-semibold mt-2 text-emerald-500 underline underline-offset-8">
-            Find Us on Map
+    <div>
+      <div className="w-11/12 mx-auto my-8 grid grid-cols-1 md:grid-cols-2">
+        <div
+          className="flex flex-col space-y-6 md:space-y-12 justify-center px-6  bg-gray-100 rounded-3xl"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
+          <h1 className="text-4xl font-semibold capitalize pt-6 text-zinc-800">
+            About Us
           </h1>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 mx-auto my-5 lg:w-2/3">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.1072154801755!2d79.1536455854816!3d12.964990682421435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad479e922faf03%3A0xf8446fdb116ec9c4!2sDolphin%20Apartment!5e0!3m2!1sen!2sin!4v1718799451775!5m2!1sen!2sin"
-              // width="300"
-              // height="350"
-              allowFullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              className="rounded-xl mb-2 mx-auto w-full h-96 mb-8"
-            />
-            <div className=" flex flex-col justify-center items-center text-center items-start px-10 gap-8">
-              <p>
-                Flat No.3D, Dolphin Flats, No.99 & 100, Vaibhav Nagar, phase-I,
-                Opp to VIT, Vellore- 632014
-              </p>
-              <p className="">Contact No: +91 9342836860</p>
-            </div>
-          </div>
+          <p className="text-justify leading-relaxed pb-6 text-gray-500 font-medium">
+            Quantum Sharq Innovative Solutions offers premier IT solutions
+            including web and Android development, embedded and cloud
+            engineering, and advanced crime analysis software for startups and
+            enterprises.
+          </p>
+        </div>
+        <div
+          className="flex flex-col justify-center items-center drop-shadow-md md:drop-shadow-2xl"
+          data-aos="fade-left"
+          data-aos-duration="3000"
+        >
+          <img src={aboutSvg} alt="about svg" className="w-[60%]" />
         </div>
       </div>
+
+      {/* map */}
+
+      <div className="w-11/12 mx-auto my-8 grid grid-cols-1 md:grid-cols-2">
+        <div
+          className="flex flex-col space-y-3 md:space-y-6 mx-2 rounded-3xl bg-emerald-100 p-2 my-6 md:my-0"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
+          <h1 className="text-[18px] md:text-4xl font-semibold mt-0 md:mt-4 text-center text-zinc-800">
+            Thinking of visiting us?
+          </h1>
+
+          <h1 className="text-[18px] md:text-3xl font-semibold text-center text-zinc-700">
+            Address
+          </h1>
+          <p className="text-[12px] md:text-[17px] text-zinc-500 font-semibold  text-center">
+            info.quantumsharq@gmail.com
+          </p>
+          <p className=" text-[12px] md:text-[17px] text-zinc-500 font-semibold text-center">
+            Flat No.3D, Dolphin Flats, No.99 & 100, Vaibhav Nagar, phase-I, Opp
+            to VIT, Vellore- 632014
+          </p>
+          <p className=" text-[12px] md:text-[17px] text-zinc-500 font-semibold text-center">
+            +91 9342836860{" "}
+          </p>
+        </div>
+
+        <div data-aos="fade-left" data-aos-duration="3000">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.1072154801755!2d79.1536455854816!3d12.964990682421435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad479e922faf03%3A0xf8446fdb116ec9c4!2sDolphin%20Apartment!5e0!3m2!1sen!2sin!4v1718799451775!5m2!1sen!2sin"
+            className="rounded-3xl w-full h-52 md:h-96"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+      </div>
+
+      {/* Animation */}
+      <marquee behavior="" direction=""></marquee>
     </div>
   );
 };

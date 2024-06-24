@@ -39,7 +39,7 @@ const Home = () => {
 
       {/* our work section */}
       <div className="project-list-con">
-        <div className="ml-2 md:ml-10 my-16 justify-center space-y-8">
+        <div className="ml-2 md:ml-10 my-6 md:my-16 justify-center space-y-8">
           <h1 className="text-4xl font-bold text-sky-500">Our Work</h1>
         </div>
         <ul className="home-project-list">
