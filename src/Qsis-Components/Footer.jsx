@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
         <div className="flex  p-4 md:p-0 justify-start space-x-6  text-sm underline underline-offset-2 text-zinc-800 font-semibold">
           <a
-            href="https://forms.gle/MNQuffQD9VowYrh2A"
+            href="https://forms.gle/6SEFCSi7Hj7ZguM17"
             target="_blank"
             className="hover:scale-110 transition-all duration-500"
           >
