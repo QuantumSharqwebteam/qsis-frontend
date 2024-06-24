@@ -105,13 +105,13 @@ const Navbar = () => {
             isMenuOpen ? "block" : "hidden"
           }`}>
             <ul className="flex ml-4 p-4 ">
-              <li className="mr-3 border-solid border-2 border-emerald-900 rounded-full p-2">
+              <li className="mr-5 border-solid border-2 border-emerald-900 rounded-full p-2">
                 <a href="mailto:hr1qsisvellore@gmail.com" target="_black"><IoMdMail size={16} className="text-emerald-900"/></a>
               </li>
-              <li className="mr-3 border-solid border-2 border-emerald-900 rounded-full p-2">
+              <li className="mr-5 border-solid border-2 border-emerald-900 rounded-full p-2">
                 <a href="https://wa.me/+916383538529" target="_black"><RiWhatsappFill size={16} className="text-emerald-900"/></a>
               </li>
-              <li className="mr-3 border-solid border-2 border-emerald-900 rounded-full p-2">
+              <li className="mr-5 border-solid border-2 border-emerald-900 rounded-full p-2">
                 <a href="https://www.linkedin.com/company/quantum-sharq-innovative-solutions/" target="_blank"><FaLinkedin size={16} className="text-emerald-900"/></a>
               </li>
             </ul>
