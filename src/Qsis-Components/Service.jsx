@@ -15,9 +15,7 @@ const Service = () => {
           <FaMicrochip className="service-icon text-emerald-900" size={50} />
           <h4 className="text-2xl font-bold mb-2">AI / ML</h4>
           <p className="font-medium text-gray-500">
-            Our mission is to leverage technology to create a safer, more
-            efficient world. We strive to deliver top-notch solutions tailored
-            to the unique needs of our clients.
+          Developed an AI/ML solution enhancing public safety by deploying real-time surveillance analytics, improving threat detection accuracy and response time using advanced computer vision techniques.
           </p>
         </div>
 
@@ -28,9 +26,7 @@ const Service = () => {
           />
           <h4 className="text-2xl font-bold mb-2">App Development</h4>
           <p className="font-medium text-gray-500">
-            Our mission is to leverage technology to create a safer, more
-            efficient world. We strive to deliver top-notch solutions tailored
-            to the unique needs of our clients.
+          Developed a user-friendly app integrating real-time data analytics, seamless user interface, and secure backend to enhance user engagement and operational efficiency.
           </p>
         </div>
 
@@ -38,9 +34,7 @@ const Service = () => {
           <BiSolidMicrochip className="service-icon text-amber-400" size={50} />
           <h4 className="text-2xl font-bold mb-2">Embedded System</h4>
           <p className="font-medium text-gray-500">
-            Our mission is to leverage technology to create a safer, more
-            efficient world. We strive to deliver top-notch solutions tailored
-            to the unique needs of our clients.
+          Developed a real-time embedded system for IoT-based smart home automation, integrating sensors, microcontrollers, and wireless communication for enhanced security and energy efficiency.
           </p>
         </div>
 
@@ -48,9 +42,8 @@ const Service = () => {
           <FaBrain className="service-icon text-sky-500 " size={50} />
           <h4 className="text-2xl font-bold mb-2">Innovative Solutions</h4>
           <p className="font-medium text-gray-500">
-            Our mission is to leverage technology to create a safer, more
-            efficient world. We strive to deliver top-notch solutions tailored
-            to the unique needs of our clients.
+          We offer innovative 
+          solutions tailored to solve your technical challenges efficiently and effectively, ensuring optimal performance and client satisfaction.
           </p>
         </div>
       </div>
