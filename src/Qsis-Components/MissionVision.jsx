@@ -7,7 +7,7 @@ const MissionVision = () => {
     <div>
       {/* mission */}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto mt-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto mt-4 overflow-x-hidden">
         <div
           className="w-full md:w-[60%] flex justify-center items-center"
           data-aos="fade-right"
@@ -30,7 +30,7 @@ const MissionVision = () => {
       </div>
 
       {/* vision */}
-      <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto my-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto my-4 overflow-x-hidden">
         <div
           className="mt-16 justify-center space-y-8"
           data-aos="fade-right"

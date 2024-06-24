@@ -54,7 +54,7 @@ const Home = () => {
           ))}
         </ul>
 
-        <div className="flex justify-end mx-1 mb-4">
+        <div className="flex justify-end mx-3 mb-4">
           <Link to="/projects">
             <p className="flex text-blue-950 cursor-pointer">
               Explore More <FaArrowRightLong className="my-1 ml-1" />

@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutUs from "../assets/about.svg";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="px-5">
       <div className="lg:text-center">
@@ -14,17 +18,17 @@ const About = () => {
           the unique needs of our clients.
         </p>
         {/* <div className="md:flex justify-center items-center"> */}
-          <img src={AboutUs} alt="about" className="md:h-96 md:w-1/2 m-auto"/>
-          <p className=" mt-4 md:mt-0 text-xl md:text-xl lg:w-2/3 m-auto text-center">
-            Our vision is to create a safer, more efficient, and sustainable world
-            by harnessing the power of technology. We aim to be the leading
-            provider of cutting-edge solutions that address critical challenges in
-            public safety, agriculture, traffic management, and beyond. By
-            continuously pushing the boundaries of innovation, we strive to
-            improve the quality of life for individuals and communities globally.
-          </p>
+        <img src={AboutUs} alt="about" className="md:h-96 md:w-1/2 m-auto" />
+        <p className=" mt-4 md:mt-0 text-xl md:text-xl lg:w-2/3 m-auto text-center">
+          Our vision is to create a safer, more efficient, and sustainable world
+          by harnessing the power of technology. We aim to be the leading
+          provider of cutting-edge solutions that address critical challenges in
+          public safety, agriculture, traffic management, and beyond. By
+          continuously pushing the boundaries of innovation, we strive to
+          improve the quality of life for individuals and communities globally.
+        </p>
         {/* </div> */}
-        
+
         <div className="flex flex-col mt-14 justify-center items-center">
           <h1 className="text-3xl md:text-4xl mb-6 font-semibold mt-2 text-emerald-500 underline underline-offset-8">
             Find Us on Map
