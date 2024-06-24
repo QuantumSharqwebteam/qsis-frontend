@@ -100,20 +100,31 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className={`w-full md:block md:w-auto ${
+        <div
+          className={`w-full md:block md:w-auto ${
             isMenuOpen ? "block" : "hidden"
-          }`}>
-            <ul className="flex ml-4 p-4 ">
-              <li className="mr-3 ">
-                <a href="mailto:hr1qsisvellore@gmail.com" target="_black"><IoMdMail size={26} /></a>
-              </li>
-              <li className="mr-3 ">
-                <a href="tel:+916383538529"><FaPhoneFlip size={24}/></a>
-              </li>
-              <li className="mr-3 ">
-                <a href="https://www.linkedin.com/company/quantum-sharq-innovative-solutions/" target="_blank"><FaLinkedin size={25}/></a>
-              </li>
-            </ul>
+          }`}
+        >
+          <ul className="flex ml-4 p-4 ">
+            <li className="mr-3 ">
+              <a href="mailto:hr1qsisvellore@gmail.com" target="_black">
+                <IoMdMail size={26} />
+              </a>
+            </li>
+            <li className="mr-3 ">
+              <a href="tel:+916383538529">
+                <FaPhoneFlip size={24} />
+              </a>
+            </li>
+            <li className="mr-3 ">
+              <a
+                href="https://www.linkedin.com/company/quantum-sharq-innovative-solutions/"
+                target="_blank"
+              >
+                <FaLinkedin size={25} />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
