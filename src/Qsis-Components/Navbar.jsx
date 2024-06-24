@@ -3,7 +3,8 @@ import logo from "../assets/Qsis_logo_invite.png";
 import { Link } from "react-router-dom";
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdMail } from "react-icons/io";
-import { FaPhoneFlip, FaLinkedin } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { RiWhatsappFill } from "react-icons/ri";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -104,14 +105,14 @@ const Navbar = () => {
             isMenuOpen ? "block" : "hidden"
           }`}>
             <ul className="flex ml-4 p-4 ">
-              <li className="mr-3 ">
-                <a href="mailto:hr1qsisvellore@gmail.com" target="_black"><IoMdMail size={26} /></a>
+              <li className="mr-3 border-solid border-2 border-emerald-900 rounded-full p-2">
+                <a href="mailto:hr1qsisvellore@gmail.com" target="_black"><IoMdMail size={16} className="text-emerald-900"/></a>
               </li>
-              <li className="mr-3 ">
-                <a href="tel:+916383538529"><FaPhoneFlip size={24}/></a>
+              <li className="mr-3 border-solid border-2 border-emerald-900 rounded-full p-2">
+                <a href="https://wa.me/+916383538529" target="_black"><RiWhatsappFill size={16} className="text-emerald-900"/></a>
               </li>
-              <li className="mr-3 ">
-                <a href="https://www.linkedin.com/company/quantum-sharq-innovative-solutions/" target="_blank"><FaLinkedin size={25}/></a>
+              <li className="mr-3 border-solid border-2 border-emerald-900 rounded-full p-2">
+                <a href="https://www.linkedin.com/company/quantum-sharq-innovative-solutions/" target="_blank"><FaLinkedin size={16} className="text-emerald-900"/></a>
               </li>
             </ul>
         </div>
