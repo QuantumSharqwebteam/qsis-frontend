@@ -65,7 +65,7 @@ const Form = () => {
         data-aos="fade-left"
         data-aos-duration="3000"
       >
-        <form className="flex flex-col space-y-2 w-3/4" ref={form}>
+        <form className="flex flex-col space-y-2 w-11/12 md:w-3/4" ref={form}>
           <label>Name</label>
           <input
             type="text"

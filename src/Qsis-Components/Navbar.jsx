@@ -32,15 +32,17 @@ const Navbar = () => {
   return (
     <nav className={`sticky top-0 z-10 ${isScrolled ? "bg-white" : ""}`}>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-2 ">
-        <a href="/" className="flex items-center w-[6rem]">
-          <img src={logo} className="w-full h-full" alt="Logo" />
-          <h3 className="uppercase font-bold text-4xl flex items-center space-x-2">
-            <span className="text-emerald-900">Q</span>{" "}
-            <span className="text-emerald-900">S</span>{" "}
-            <span className="text-emerald-900">I</span>{" "}
-            <span className="text-emerald-900">S</span>
-          </h3>
-        </a>
+        <div>
+          <a href="/" className="flex items-center w-[6rem]">
+            <img src={logo} className="w-full h-full" alt="Logo" />
+            <h3 className="uppercase font-bold text-4xl flex items-center space-x-2">
+              <span className="text-emerald-900">Q</span>{" "}
+              <span className="text-emerald-900">S</span>{" "}
+              <span className="text-emerald-900">I</span>{" "}
+              <span className="text-emerald-900">S</span>
+            </h3>
+          </a>
+        </div>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -102,7 +104,7 @@ const Navbar = () => {
             isMenuOpen ? "block" : "hidden"
           }`}
         >
-          <ul className="flex ml-4 p-4 ">
+          <ul className="flex ml-4 p-4 md:ml-0 md:p-0">
             <li className="mr-5 border-solid border-2 border-emerald-900 rounded-full p-2">
               <a href="mailto:hr1qsisvellore@gmail.com" target="_black">
                 <IoMdMail size={20} className="text-emerald-900" />
