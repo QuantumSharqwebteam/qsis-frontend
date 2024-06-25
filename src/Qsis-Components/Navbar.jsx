@@ -3,7 +3,7 @@ import logo from "../assets/Qsis_logo_invite.png";
 import { Link } from "react-router-dom";
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdMail } from "react-icons/io";
-import { FaLinkedin, FaPhoneFlip } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 import { RiWhatsappFill } from "react-icons/ri";
 
 const Navbar = () => {
