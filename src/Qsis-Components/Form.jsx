@@ -66,8 +66,9 @@ const Form = () => {
         data-aos-duration="3000"
       >
         <form className="flex flex-col space-y-2 w-11/12 md:w-3/4" ref={form}>
-          <label>Name</label>
+          <label htmlFor="name">Name</label>
           <input
+            id="name"
             type="text"
             name="user_name"
             className="border border-slate-300 p-1 rounded px-2 text-slate-700 outline-sky-500"
@@ -75,30 +76,33 @@ const Form = () => {
           {errors.user_name && (
             <span className="text-red-500">{errors.user_name}</span>
           )}
-          <label>Email Id</label>
+          <label htmlFor="email">Email Id</label>
           <input
             type="email"
+            id="email"
             name="user_email"
             className="border border-slate-300 p-1 rounded px-2 text-slate-700 outline-sky-500"
           />
           {errors.user_email && (
             <span className="text-red-500">{errors.user_email}</span>
           )}
-          <label>Phone number</label>
+          <label htmlFor="phone">Phone number</label>
           <input
             type="number"
+            id="phone"
             name="user_phone"
             className="border border-slate-300 p-1 rounded px-2 text-slate-700 outline-sky-500"
           />
           {errors.user_phone && (
             <span className="text-red-500">{errors.user_phone}</span>
           )}
-          <label>Message</label>
+          <label htmlFor="message">Message</label>
           <textarea
             cols="20"
             rows="5"
             placeholder="Feel free to ask!"
             name="user_message"
+            id="message"
             className="border border-slate-300 p-1 rounded px-2 text-slate-700
         outline-sky-500 resize-none"
           ></textarea>
