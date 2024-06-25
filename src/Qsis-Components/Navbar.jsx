@@ -46,7 +46,7 @@ const Navbar = () => {
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          className="inline-flex items-center p-2 justify-center text-gray-900 rounded-lg md:hidden outline-none"
+          className="inline-flex items-center p-2 justify-center text-gray-900 rounded-lg lg:hidden outline-none"
           aria-controls="navbar-default"
           aria-expanded={isMenuOpen ? "true" : "false"}
           onClick={toggleMenu}
@@ -54,17 +54,17 @@ const Navbar = () => {
           <CiMenuFries className="text-4xl" />
         </button>
         <div
-          className={`w-full md:block md:w-auto ${
+          className={`w-full lg:block lg:w-auto lg:ml-24 ${
             isMenuOpen ? "block" : "hidden"
           }`}
           id="navbar-default"
         >
-          <ul className="flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
+          <ul className="flex flex-col p-4 md:p-0 md:space-x-8 md:mt-0 mt-4  lg:flex-row ">
             <li>
               <Link
                 to="/"
                 onClick={toggleMenu}
-                className="block py-2 px-3 text-gray-900 md:p-0 hover:text-emerald-500 transition-all duration-500 text-[18px] font-semibold"
+                className="block py-2 px-3 text-gray-900 md:p-0 md:ml-8 hover:text-emerald-500 transition-all duration-500 text-[18px] font-semibold"
                 aria-current="page"
               >
                 Home
@@ -100,11 +100,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div
-          className={`w-full md:block md:w-auto ${
+          className={`w-full lg:block lg:w-auto ${
             isMenuOpen ? "block" : "hidden"
           }`}
         >
-          <ul className="flex ml-4 p-4 md:ml-0 md:p-0">
+          <ul className="flex ml-4 p-4 md:ml-4 md:mt-2">
             <li className="mr-5 border-solid border-2 border-emerald-900 rounded-full p-2">
               <a href="mailto:hr1qsisvellore@gmail.com" target="_black">
                 <IoMdMail size={20} className="text-emerald-900" />
