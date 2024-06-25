@@ -12,7 +12,12 @@ const CompanyNameTypeAnimation = () => {
   return (
     <div className="mb-4">
       <h2 className="text-3xl px-2 py-4 font-bold text-center">
-        Welcome, <span id="typewriter" className="gradient-text"></span>{" "}
+        Welcome,{" "}
+        <span
+          id="typewriter"
+          data-testid="typewriter"
+          className="gradient-text"
+        ></span>{" "}
       </h2>
     </div>
   );

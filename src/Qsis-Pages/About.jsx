@@ -67,6 +67,7 @@ const About = () => {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            data-testid="map"
           />
         </div>
       </div>
