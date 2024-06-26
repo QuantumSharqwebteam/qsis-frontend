@@ -16,7 +16,7 @@ const Signup = () => {
     console.log(name, email,password);
     e.preventDefault();
     axios
-      .post("http://localhost:3001/register", { name, email, passwaord })
+      .post("http://localhost:5000/register", { name, email, passwaord })
       .then((res)=> res.json())
       .then(data=>{
         if (!data.token){
