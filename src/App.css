@@ -1,42 +1,114 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.loading {
+    margin: auto;
+    border-radius: 50%;
+    border-top: 4px solid rgb(61, 61, 61);
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
   }
-  to {
-    transform: rotate(360deg);
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+
+
+  .service-container{
+    padding: 20px;
   }
-}
+  
+  .service-con{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .service-card{
+    border-radius: 20px;
+    background-color: #E8E7E7;
+    color: #000;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: margin 0.3s;
 
-.card {
-  padding: 2em;
-}
+    background-size: 180% 180%;
+  }
+  
 
-.read-the-docs {
-  color: #888;
-}
+  
+  .service-icon{
+    margin-bottom: 20px;
+  }
+
+  .home-project-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    width: 100%;
+    place-content: center;
+  }
+
+  .project-card{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    border-radius: 16px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    width: 320px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+  }
+
+  .project-card:hover{
+    scale: 1.1;
+    transition: all 0.9s;
+  }
+  .circle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    padding: 5px;
+    height: 20px;
+    
+  }
+
+
+
+  @media screen and (min-width:968px) {
+    
+    .service-con{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+  
+    .service-card{
+      box-shadow: none;
+      width: 300px;
+      /* transition: scale 0.3; */
+    }
+    .service-card:hover{
+      scale: 1.1;
+      transition: all 0.9s;
+    }
+    .project-card{
+      margin-right: 20px;
+    }
+    
+  }
