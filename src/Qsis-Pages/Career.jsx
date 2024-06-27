@@ -7,7 +7,7 @@ const Career = () => {
   //   window.scrollTo(0, 0);
   // }, []);
   useEffect(() => {
-    fetch(`http://localhost:5000/career`)
+    fetch(`http://62.72.57.58:4000/career`)
     .then((res) => res.json())
     .then(data => {
         console.log(data);
