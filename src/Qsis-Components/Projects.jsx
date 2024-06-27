@@ -20,7 +20,7 @@ import "react-vertical-timeline-component/style.min.css";
 const Product = () => {
   const [produts, setProducts] = useState([])
   useEffect(() => {
-    fetch(`http://localhost:5000/projects`)
+    fetch(`http://62.72.57.58:4000/projects`)
     .then((res) => res.json())
     .then(data => {
         console.log(data);
